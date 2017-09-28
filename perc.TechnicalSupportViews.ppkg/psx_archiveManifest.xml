@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PSXArchiveManifest>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1002">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_2989281588208832300.xml</RxFile>
+         <ArchiveFile>ViewDef-1002\dpl_2989281588208832300.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1003">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_8946639477850660665.xml</RxFile>
+         <ArchiveFile>ViewDef-1003\dpl_8946639477850660665.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1001">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_6735690211373097098.xml</RxFile>
+         <ArchiveFile>ViewDef-1001\dpl_6735690211373097098.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="Application-ts_cxViews">
+      <DBMSInfoList/>
+      <PSXDependencyFile fileType="APPLICATION_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_7153722925325100126.xml</RxFile>
+         <ArchiveFile>Application-ts_cxViews\dpl_7153722925325100126.xml</ArchiveFile>
+      </PSXDependencyFile>
+      <PSXDependencyFile fileType="APPLICATION_FILE">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_2452152934993941134.tmp</RxFile>
+         <ArchiveFile>Application-ts_cxViews\dpl_2452152934993941134.tmp</ArchiveFile>
+         <OriginalFile>View.dtd</OriginalFile>
+      </PSXDependencyFile>
+      <PSXDependencyFile fileType="APPLICATION_FILE">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_5558608712980949529.tmp</RxFile>
+         <ArchiveFile>Application-ts_cxViews\dpl_5558608712980949529.tmp</ArchiveFile>
+         <OriginalFile>View.pdt</OriginalFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523339">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_5185268770214123909.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523339\dpl_5185268770214123909.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523338">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_2211754420721984766.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523338\dpl_2211754420721984766.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523337">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_1171382653429345763.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523337\dpl_1171382653429345763.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523336">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_8774924634198872002.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523336\dpl_8774924634198872002.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1007">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_7966888592235335635.xml</RxFile>
+         <ArchiveFile>ViewDef-1007\dpl_7966888592235335635.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1006">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_7149228678221726123.xml</RxFile>
+         <ArchiveFile>ViewDef-1006\dpl_7149228678221726123.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1005">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_6701369313719381691.xml</RxFile>
+         <ArchiveFile>ViewDef-1005\dpl_6701369313719381691.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1004">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_2797851880546693278.xml</RxFile>
+         <ArchiveFile>ViewDef-1004\dpl_2797851880546693278.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="DisplayFormatDef-1001">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_3990971258823300655.xml</RxFile>
+         <ArchiveFile>DisplayFormatDef-1001\dpl_3990971258823300655.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1009">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_23690472722180408.xml</RxFile>
+         <ArchiveFile>ViewDef-1009\dpl_23690472722180408.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523150">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_5533069427660039685.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523150\dpl_5533069427660039685.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523151">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_571863165561759672.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523151\dpl_571863165561759672.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523253">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_745492901526189504.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523253\dpl_745492901526189504.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523254">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_1465362246020187039.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523254\dpl_1465362246020187039.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1010">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_4009604823339429708.xml</RxFile>
+         <ArchiveFile>ViewDef-1010\dpl_4009604823339429708.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523255">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_6280883829114534955.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523255\dpl_6280883829114534955.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1011">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_495613906895725075.xml</RxFile>
+         <ArchiveFile>ViewDef-1011\dpl_495613906895725075.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1012">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_6924632647231960700.xml</RxFile>
+         <ArchiveFile>ViewDef-1012\dpl_6924632647231960700.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1013">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_6955376317642745728.xml</RxFile>
+         <ArchiveFile>ViewDef-1013\dpl_6955376317642745728.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1014">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_2732785118728703707.xml</RxFile>
+         <ArchiveFile>ViewDef-1014\dpl_2732785118728703707.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--4002292620834372225">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_1402230294814665195.xml</RxFile>
+         <ArchiveFile>AclDef--4002292620834372225\dpl_1402230294814665195.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523149">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_8327628148847938455.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523149\dpl_8327628148847938455.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1016">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_3057441898190206660.xml</RxFile>
+         <ArchiveFile>ViewDef-1016\dpl_3057441898190206660.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523340">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_7974832088443538256.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523340\dpl_7974832088443538256.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="ViewDef-1015">
+      <PSXDependencyFile fileType="COMPONENT_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_884111683910093941.xml</RxFile>
+         <ArchiveFile>ViewDef-1015\dpl_884111683910093941.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523147">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_4042956053641980605.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523147\dpl_4042956053641980605.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523146">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_3979291980801034912.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523146\dpl_3979291980801034912.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523145">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_6225977260657010548.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523145\dpl_6225977260657010548.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+   <PSXDepFilesIdTypes DependencyKey="AclDef--806945804261523341">
+      <PSXDependencyFile fileType="SERVICEGENERATED_XML">
+         <RxFile>C:\WINDOWS\TEMP\rxtemp.support\dpl_1438942266640474528.xml</RxFile>
+         <ArchiveFile>AclDef--806945804261523341\dpl_1438942266640474528.xml</ArchiveFile>
+      </PSXDependencyFile>
+   </PSXDepFilesIdTypes>
+</PSXArchiveManifest>

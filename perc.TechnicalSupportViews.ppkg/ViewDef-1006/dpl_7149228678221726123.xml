@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PSXSearch state="db_unmodified">
+   <PSXKey>
+      <SEARCHID>1006</SEARCHID>
+   </PSXKey>
+   <DISPLAYNAME>TS Orphaned Dependent Navons</DISPLAYNAME>
+   <INTERNALNAME>TS_OrphanedDependentNavons</INTERNALNAME>
+   <PARENTCATEGORY>2</PARENTCATEGORY>
+   <DISPLAYFORMAT>1001</DISPLAYFORMAT>
+   <TYPE>View</TYPE>
+   <MAXIMUMITEMS>-1</MAXIMUMITEMS>
+   <VERSION>1</VERSION>
+   <CASESENSITIVE>0</CASESENSITIVE>
+   <DESCRIPTION>Finds all Navons  that are not in a folder and have AA relationship(s) to other items. Results are filtered by community.</DESCRIPTION>
+   <CUSTOMURL>../ts_cxViews/TS_ORPHANED_DEP_NAVONS.xml</CUSTOMURL>
+   <PSX_FIELDS className="com.percussion.cms.objectstore.PSSearchField" state="db_unmodified">
+      <PSXSearchField sequence="0" state="db_unmodified">
+         <PSXKey>
+            <FIELDNAME>sys_title</FIELDNAME>
+            <SEARCHID>1006</SEARCHID>
+         </PSXKey>
+         <FIELDTYPE>Text</FIELDTYPE>
+         <OPERATOR>like</OPERATOR>
+         <EXTOPERATOR/>
+         <FIELDLABEL>Title</FIELDLABEL>
+         <FIELDDESCRIPTION>Content item title</FIELDDESCRIPTION>
+      </PSXSearchField>
+   </PSX_FIELDS>
+   <PSX_PROPERTIES className="com.percussion.cms.objectstore.PSSearchMultiProperty" ordered="no" state="db_unmodified">
+      <PSXSearchMultiProperty className="com.percussion.cms.objectstore.PSSProperty" ordered="no" propName="sys_community" state="db_unmodified">
+         <PSXSProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>10</PROPERTYVALUE>
+               <SEARCHID>1006</SEARCHID>
+            </PSXKey>
+            <Value>10</Value>
+            <Description>from acls</Description>
+         </PSXSProperty>
+         <PSXSProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>1001</PROPERTYVALUE>
+               <SEARCHID>1006</SEARCHID>
+            </PSXKey>
+            <Value>1001</Value>
+            <Description>from acls</Description>
+         </PSXSProperty>
+         <PSXSProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>1002</PROPERTYVALUE>
+               <SEARCHID>1006</SEARCHID>
+            </PSXKey>
+            <Value>1002</Value>
+            <Description>from acls</Description>
+         </PSXSProperty>
+         <PSXSProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>1003</PROPERTYVALUE>
+               <SEARCHID>1006</SEARCHID>
+            </PSXKey>
+            <Value>1003</Value>
+            <Description>from acls</Description>
+         </PSXSProperty>
+         <PSXSProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>1004</PROPERTYVALUE>
+               <SEARCHID>1006</SEARCHID>
+            </PSXKey>
+            <Value>1004</Value>
+            <Description>from acls</Description>
+         </PSXSProperty>
+      </PSXSearchMultiProperty>
+      <PSXSearchMultiProperty className="com.percussion.cms.objectstore.PSSProperty" ordered="no" propName="userCustomizable" state="db_unmodified">
+         <PSXSProperty propName="userCustomizable" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>userCustomizable</PROPERTYNAME>
+               <PROPERTYVALUE>n</PROPERTYVALUE>
+               <SEARCHID>1006</SEARCHID>
+            </PSXKey>
+            <Value>n</Value>
+         </PSXSProperty>
+      </PSXSearchMultiProperty>
+   </PSX_PROPERTIES>
+</PSXSearch>

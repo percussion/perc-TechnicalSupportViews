@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PSXDisplayFormat state="db_unmodified">
+   <PSXKey>
+      <DISPLAYID>1001</DISPLAYID>
+   </PSXKey>
+   <DISPLAYNAME>TechnicalSupport</DISPLAYNAME>
+   <INTERNALNAME>TechnicalSupport</INTERNALNAME>
+   <VERSION>1</VERSION>
+   <DESCRIPTION>Extended folder display format.</DESCRIPTION>
+   <PSXDFColumns className="com.percussion.cms.objectstore.PSDisplayColumn" state="db_unmodified">
+      <PSXDisplayColumn displayName="Workflow" groupingType="flat" name="sys_workflowid" sequence="0" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_workflowid</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Number</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Workflow Name" groupingType="flat" name="sys_workflowname" sequence="1" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_workflowname</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Text</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Workflow State ID" groupingType="flat" name="sys_contentstateid" sequence="2" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_contentstateid</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Number</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="State" groupingType="flat" name="sys_statename" sequence="3" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_statename</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description>The current document workflow state.</Description>
+         <RenderType>Text</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Content id" groupingType="flat" name="sys_contentid" sequence="4" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_contentid</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Number</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Content Title" groupingType="flat" name="sys_title" sequence="5" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_title</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description>The title of the item.</Description>
+         <RenderType>Text</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Checkout status" groupingType="flat" name="sys_checkoutstatus" sequence="6" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_checkoutstatus</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description>The status whether or not the content is checked out.</Description>
+         <RenderType>Image</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Checked out user name" groupingType="flat" name="sys_contentcheckoutusername" sequence="7" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_contentcheckoutusername</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Text</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Content Type" groupingType="flat" name="sys_contenttypename" sequence="8" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_contenttypename</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description>The document content type.</Description>
+         <RenderType>Text</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Author" groupingType="flat" name="sys_contentcreatedby" sequence="9" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_contentcreatedby</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description>The name of the author.</Description>
+         <RenderType>Text</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Last Modified" groupingType="flat" name="sys_contentlastmodifieddate" sequence="10" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_contentlastmodifieddate</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description>The date when last modified.</Description>
+         <RenderType>Date</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Community" groupingType="flat" name="sys_communityid" sequence="11" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_communityid</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Number</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Community Name" groupingType="flat" name="sys_communityname" sequence="12" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_communityname</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Text</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Created on" groupingType="flat" name="sys_contentcreateddate" sequence="13" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_contentcreateddate</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Date</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Expiration Date" groupingType="flat" name="sys_contentexpirydate" sequence="14" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_contentexpirydate</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Date</RenderType>
+      </PSXDisplayColumn>
+      <PSXDisplayColumn displayName="Last modified by" groupingType="flat" name="sys_contentlastmodifier" sequence="15" sortOrder="ascending" state="db_unmodified" width="-1">
+         <PSXKey>
+            <SOURCE>sys_contentlastmodifier</SOURCE>
+            <DISPLAYID>1001</DISPLAYID>
+         </PSXKey>
+         <Description/>
+         <RenderType>Text</RenderType>
+      </PSXDisplayColumn>
+   </PSXDFColumns>
+   <PSX_PROPERTIES className="com.percussion.cms.objectstore.PSDFMultiProperty" ordered="no" state="db_unmodified">
+      <PSXDFMultiProperty className="com.percussion.cms.objectstore.PSDFProperty" ordered="no" propName="sortColumn" state="db_unmodified">
+         <PSXDFProperty propName="sortColumn" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sortColumn</PROPERTYNAME>
+               <PROPERTYVALUE>sys_statename</PROPERTYVALUE>
+               <DISPLAYID>1001</DISPLAYID>
+            </PSXKey>
+            <Value>sys_statename</Value>
+         </PSXDFProperty>
+      </PSXDFMultiProperty>
+      <PSXDFMultiProperty className="com.percussion.cms.objectstore.PSDFProperty" ordered="no" propName="sortDirection" state="db_unmodified">
+         <PSXDFProperty propName="sortDirection" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sortDirection</PROPERTYNAME>
+               <PROPERTYVALUE>sortAscending</PROPERTYVALUE>
+               <DISPLAYID>1001</DISPLAYID>
+            </PSXKey>
+            <Value>sortAscending</Value>
+         </PSXDFProperty>
+      </PSXDFMultiProperty>
+      <PSXDFMultiProperty className="com.percussion.cms.objectstore.PSDFProperty" ordered="no" propName="sys_community" state="db_unmodified">
+         <PSXDFProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>10</PROPERTYVALUE>
+               <DISPLAYID>1001</DISPLAYID>
+            </PSXKey>
+            <Value>10</Value>
+            <Description>from acls</Description>
+         </PSXDFProperty>
+         <PSXDFProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>1001</PROPERTYVALUE>
+               <DISPLAYID>1001</DISPLAYID>
+            </PSXKey>
+            <Value>1001</Value>
+            <Description>from acls</Description>
+         </PSXDFProperty>
+         <PSXDFProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>1002</PROPERTYVALUE>
+               <DISPLAYID>1001</DISPLAYID>
+            </PSXKey>
+            <Value>1002</Value>
+            <Description>from acls</Description>
+         </PSXDFProperty>
+         <PSXDFProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>1003</PROPERTYVALUE>
+               <DISPLAYID>1001</DISPLAYID>
+            </PSXKey>
+            <Value>1003</Value>
+            <Description>from acls</Description>
+         </PSXDFProperty>
+         <PSXDFProperty propName="sys_community" state="db_unmodified">
+            <PSXKey>
+               <PROPERTYNAME>sys_community</PROPERTYNAME>
+               <PROPERTYVALUE>1004</PROPERTYVALUE>
+               <DISPLAYID>1001</DISPLAYID>
+            </PSXKey>
+            <Value>1004</Value>
+            <Description>from acls</Description>
+         </PSXDFProperty>
+      </PSXDFMultiProperty>
+   </PSX_PROPERTIES>
+</PSXDisplayFormat>

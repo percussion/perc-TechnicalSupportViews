@@ -1,0 +1,2082 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PSXApplication active="no" appType="USER" enabled="yes" hidden="no" id="1102" startPriority="0" version="2.0">
+   <name>ts_cxViews</name>
+   <description>Technical Support developed Views</description>
+   <requestRoot>ts_cxViews</requestRoot>
+   <defaultRequestPage/>
+   <appExtensionContext>application/_TS_ADAMS_1243362425641/</appExtensionContext>
+   <PSXRevisionHistory>
+      <PSXRevisionEntry majorVersion="1" minorVersion="0">
+         <agent>admin1</agent>
+         <description>Saved</description>
+         <time>20090526T141833534</time>
+      </PSXRevisionEntry>
+      <PSXRevisionEntry majorVersion="1" minorVersion="59">
+         <agent>admin1</agent>
+         <description>Saved</description>
+         <time>20090713T153718333</time>
+      </PSXRevisionEntry>
+   </PSXRevisionHistory>
+   <PSXAcl id="0">
+      <PSXAclEntry id="0" type="user">
+         <name>Default</name>
+         <applicationAccessLevel dataCreate="yes" dataDelete="yes" dataQuery="yes" dataUpdate="yes" designDelete="yes" designRead="yes" designUpdate="yes" modifyAcl="yes"/>
+      </PSXAclEntry>
+      <PSXAclEntry id="0" type="user">
+         <name>admin1</name>
+         <applicationAccessLevel dataCreate="yes" dataDelete="yes" dataQuery="yes" dataUpdate="yes" designDelete="yes" designRead="yes" designUpdate="yes" modifyAcl="yes"/>
+      </PSXAclEntry>
+      <multiMembershipBehavior/>
+   </PSXAcl>
+   <maxThreads>0</maxThreads>
+   <maxRequestTime>0</maxRequestTime>
+   <maxRequestsInQueue>0</maxRequestsInQueue>
+   <userSessionEnabled>no</userSessionEnabled>
+   <userSessionTimeout>0</userSessionTimeout>
+   <requestTypeHtmlParamName>DBActionType</requestTypeHtmlParamName>
+   <requestTypeValueQuery>QUERY</requestTypeValueQuery>
+   <requestTypeValueInsert>INSERT</requestTypeValueInsert>
+   <requestTypeValueUpdate>UPDATE</requestTypeValueUpdate>
+   <requestTypeValueDelete>DELETE</requestTypeValueDelete>
+   <PSXDataSet id="10740">
+      <name>Dataset_TS_INVALID_CONTENTTYPEID</name>
+      <description>FIND All ITEMS in the CONTENTSTATUS table, that have an invalid CONTENTTYPEID.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10413">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10408">
+            <PSXBackEndTable id="10407">
+               <alias>TS_INVALID_CONTENTTYPEID</alias>
+               <table>TS_INVALID_CONTENTTYPEID</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10411" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_INVALID_CONTENTTYPEID</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_INVALID_CONTENTTYPEID</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10409" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_INVALID_CONTENTTYPEID</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10738">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10739">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_INVALID_CONTENTTYPEID</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10410">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10743">
+      <name>Dataset_TS_SHAREDIMAGE_NO_FILENAME</name>
+      <description>FIND All ITEMS in the RXS_CT_SHAREDIMAGE table, that have a NULL IMG1_FILENAME, but IMG1 IS NOT NULL for the item's current public revision.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10392">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10387">
+            <PSXBackEndTable id="10386">
+               <alias>TS_SHAREDIMAGE_NO_FILENAME</alias>
+               <table>TS_SHAREDIMAGE_NO_FILENAME</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10390" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_SHAREDIMAGE_NO_FILENAME</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_SHAREDIMAGE_NO_FILENAME</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10388" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_SHAREDIMAGE_NO_FILENAME</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10741">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10742">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_SHAREDIMAGE_NO_FILENAME</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10389">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10746">
+      <name>Dataset_TS_SHAREDBINARY_NO_FILENAME</name>
+      <description>FIND All ITEMS in the RXS_CT_SHAREDBINARY table, that have a NULL ITEM_FILENAME, but ITEM IS NOT NULL for the item's current public revision.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10399">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10394">
+            <PSXBackEndTable id="10393">
+               <alias>TS_SHAREDBINARY_NO_FILENAME</alias>
+               <table>TS_SHAREDBINARY_NO_FILENAME</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10397" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_SHAREDBINARY_NO_FILENAME</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_SHAREDBINARY_NO_FILENAME</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10395" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_SHAREDBINARY_NO_FILENAME</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10744">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10745">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_SHAREDBINARY_NO_FILENAME</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10396">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10749">
+      <name>Dataset_TS_RXPUBDOCS_NO_FILENAME_ORPH</name>
+      <description>Find Published Content Items that end in a '/' (e.g. don't have a filename or file extension) for their publocation, and are also in the ORPHANED_ITEMS view result set.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10333">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10328">
+            <PSXBackEndTable id="10327">
+               <alias>TS_RXPUBDOCS_NO_FILENAME_ORPH</alias>
+               <table>TS_RXPUBDOCS_NO_FILENAME_ORPH</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10331" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_RXPUBDOCS_NO_FILENAME_ORPH</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_RXPUBDOCS_NO_FILENAME_ORPH</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10329" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_RXPUBDOCS_NO_FILENAME_ORPH</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10747">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10748">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_RXPUBDOCS_NO_FILENAME_ORPH</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10330">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10752">
+      <name>Dataset_TS_RXPUBDOCS_NO_FILENAME</name>
+      <description>Find Published Content Items that end in a '/' (e.g. don't have a filename or file extension) for their publocation.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10274">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10269">
+            <PSXBackEndTable id="10268">
+               <alias>TS_RXPUBDOCS_NO_FILENAME</alias>
+               <table>TS_RXPUBDOCS_NO_FILENAME</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10272" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_RXPUBDOCS_NO_FILENAME</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_RXPUBDOCS_NO_FILENAME</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10270" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_RXPUBDOCS_NO_FILENAME</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10750">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10751">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_RXPUBDOCS_NO_FILENAME</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10271">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10771">
+      <name>Dataset_TS_PUB_NAVONS_NO_LANDING_PAGE</name>
+      <description>Find all publishable navons without a landing page.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10609">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10604">
+            <PSXBackEndTable id="10603">
+               <alias>TS_PUB_NAVONS_NO_LANDING_PAGE</alias>
+               <table>TS_PUB_NAVONS_NO_LANDING_PAGE</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10607" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_PUB_NAVONS_NO_LANDING_PAGE</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_PUB_NAVONS_NO_LANDING_PAGE</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10605" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_PUB_NAVONS_NO_LANDING_PAGE</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10769">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10770">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_PUB_NAVONS_NO_LANDING_PAGE</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10606">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10774">
+      <name>Dataset_TS_ORPHANED_PUB_ITEMS</name>
+      <description>Finds all items that are not in folders but are in a publishable state. Results are filtered by community.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10048">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10043">
+            <PSXBackEndTable id="10042">
+               <alias>TS_ORPHANED_PUB_ITEMS</alias>
+               <table>TS_ORPHANED_PUB_ITEMS</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10046" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_PUB_ITEMS</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_PUB_ITEMS</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10044" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_ORPHANED_PUB_ITEMS</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10772">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10773">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_ORPHANED_PUB_ITEMS</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10045">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10777">
+      <name>Dataset_TS_ORPHANED_NAVONS</name>
+      <description>Finds all Navons that are not in folders. Results are filtered by community.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10260">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10255">
+            <PSXBackEndTable id="10254">
+               <alias>TS_ORPHANED_NAVONS</alias>
+               <table>TS_ORPHANED_NAVONS</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10258" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_NAVONS</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_NAVONS</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10256" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_ORPHANED_NAVONS</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10775">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10776">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_ORPHANED_NAVONS</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10257">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10780">
+      <name>Dataset_TS_ORPHANED_ITEMS</name>
+      <description>Finds all items that are not in a folder. Results are filtered by community.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10041">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10036">
+            <PSXBackEndTable id="10035">
+               <alias>TS_ORPHANED_ITEMS</alias>
+               <table>TS_ORPHANED_ITEMS</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10039" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_ITEMS</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_ITEMS</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10037" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_ORPHANED_ITEMS</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10778">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10779">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_ORPHANED_ITEMS</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10038">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10783">
+      <name>Dataset_TS_INVALID_WORKFLOWAPPID</name>
+      <description>FIND All ITEMS in the CONTENTSTATUS table, that have an invalid WORKFLOWAPPID.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10406">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10401">
+            <PSXBackEndTable id="10400">
+               <alias>TS_INVALID_WORKFLOWAPPID</alias>
+               <table>TS_INVALID_WORKFLOWAPPID</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10404" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_INVALID_WORKFLOWAPPID</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_INVALID_WORKFLOWAPPID</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10402" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_INVALID_WORKFLOWAPPID</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10781">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10782">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_INVALID_WORKFLOWAPPID</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10403">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10786">
+      <name>Dataset_TS_MULTIPLE_PARENT_NAVONS</name>
+      <description>Find all publishable navons with more than one parent navon.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10535">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10530">
+            <PSXBackEndTable id="10529">
+               <alias>TS_MULTIPLE_PARENT_NAVONS</alias>
+               <table>TS_MULTIPLE_PARENT_NAVONS</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10533" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_MULTIPLE_PARENT_NAVONS</tableAlias>
+                  <column>DEPENDENT_ID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10531" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_MULTIPLE_PARENT_NAVONS</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10784">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10785">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_MULTIPLE_PARENT_NAVONS</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10532">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10789">
+      <name>Dataset_TS_NON_PUB_LANDING_PAGE</name>
+      <description>Find all non-publishable landing pages of publishable navons.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10542">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10537">
+            <PSXBackEndTable id="10536">
+               <alias>TS_NON_PUB_LANDING_PAGE</alias>
+               <table>TS_NON_PUB_LANDING_PAGE</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10540" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_NON_PUB_LANDING_PAGE</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_NON_PUB_LANDING_PAGE</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10538" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_NON_PUB_LANDING_PAGE</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10787">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10788">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_NON_PUB_LANDING_PAGE</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10539">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10792">
+      <name>Dataset_TS_ORPHANED_DEP_ITEMS</name>
+      <description>Finds all items that are not in a folder and have AA relationship(s) to other items. Results are filtered by community.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10062">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10057">
+            <PSXBackEndTable id="10056">
+               <alias>TS_ORPHANED_DEP_ITEMS</alias>
+               <table>TS_ORPHANED_DEP_ITEMS</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10060" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_DEP_ITEMS</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_DEP_ITEMS</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10058" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_ORPHANED_DEP_ITEMS</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10790">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10791">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_ORPHANED_DEP_ITEMS</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10059">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10795">
+      <name>Dataset_TS_ORPHANED_DEP_NAVONS</name>
+      <description>Finds all Navons that are not in a folder and have AA relationship(s) to other items. Results are filtered by community.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10267">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10262">
+            <PSXBackEndTable id="10261">
+               <alias>TS_ORPHANED_DEP_NAVONS</alias>
+               <table>TS_ORPHANED_DEP_NAVONS</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10265" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_DEP_NAVONS</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_DEP_NAVONS</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10263" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_ORPHANED_DEP_NAVONS</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10793">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10794">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_ORPHANED_DEP_NAVONS</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10264">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10798">
+      <name>Dataset_TS_ORPHANED_DEP_PUB_ITEMS</name>
+      <description>Finds all items that are not in a folder, have AA relationship(s) to other items, and are in a publishable state. Results are filtered by community.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10187">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10182">
+            <PSXBackEndTable id="10181">
+               <alias>TS_ORPHANED_DEP_PUB_ITEMS</alias>
+               <table>TS_ORPHANED_DEP_PUB_ITEMS</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10185" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_DEP_PUB_ITEMS</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_DEP_PUB_ITEMS</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10183" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_ORPHANED_DEP_PUB_ITEMS</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10796">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10797">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_ORPHANED_DEP_PUB_ITEMS</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10184">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXDataSet id="10801">
+      <name>Dataset_TS_ORPHANED_FOLDERS</name>
+      <description>Finds all folders that are not in folders.</description>
+      <transactionType>none</transactionType>
+      <PSXQueryPipe id="10194">
+         <name>QueryPipe</name>
+         <description/>
+         <PSXBackEndDataTank id="10189">
+            <PSXBackEndTable id="10188">
+               <alias>TS_ORPHANED_FOLDERS</alias>
+               <table>TS_ORPHANED_FOLDERS</table>
+               <datasource/>
+            </PSXBackEndTable>
+         </PSXBackEndDataTank>
+         <PSXDataMapper id="10192" returnEmptyXml="yes">
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contentid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_FOLDERS</tableAlias>
+                  <column>CONTENTID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+            <PSXDataMapping groupId="1" id="0">
+               <PSXXmlField id="0">
+                  <name>View/Item/@sys_contenttypeid</name>
+               </PSXXmlField>
+               <PSXBackEndColumn id="0">
+                  <tableAlias>TS_ORPHANED_FOLDERS</tableAlias>
+                  <column>CONTENTTYPEID</column>
+                  <columnAlias/>
+               </PSXBackEndColumn>
+               <Conditionals/>
+            </PSXDataMapping>
+         </PSXDataMapper>
+         <PSXDataSelector id="10190" method="whereClause" unique="no">
+            <WhereClauses>
+               <PSXWhereClause id="0" omitWhenNull="no">
+                  <PSXConditional id="0">
+                     <variable>
+                        <PSXBackEndColumn id="0">
+                           <tableAlias>TS_ORPHANED_FOLDERS</tableAlias>
+                           <column>COMMUNITYID</column>
+                           <columnAlias/>
+                        </PSXBackEndColumn>
+                     </variable>
+                     <operator>=</operator>
+                     <value>
+                        <PSXUserContext id="0">
+                           <name>User/SessionObject/sys_community</name>
+                        </PSXUserContext>
+                     </value>
+                     <boolean>AND</boolean>
+                  </PSXConditional>
+               </PSXWhereClause>
+            </WhereClauses>
+            <Sorting/>
+            <nativeStatement/>
+            <Caching enabled="no" type="interval">
+               <ageInterval>15</ageInterval>
+            </Caching>
+         </PSXDataSelector>
+         <ResultDataExits>
+            <PSXExtensionCallSet id="10799">
+               <PSXExtensionCall id="0">
+                  <name>Java/global/percussion/system/sys_emptyDoc</name>
+                  <PSXExtensionParamValue id="0">
+                     <value>
+                        <PSXTextLiteral id="0">
+                           <text>Views</text>
+                        </PSXTextLiteral>
+                     </value>
+                  </PSXExtensionParamValue>
+               </PSXExtensionCall>
+            </PSXExtensionCallSet>
+         </ResultDataExits>
+         <PSXResourceCacheSettings enabled="no" id="0">
+            <Keys/>
+            <Dependencies/>
+         </PSXResourceCacheSettings>
+      </PSXQueryPipe>
+      <PSXPageDataTank id="10800">
+         <schemaSource>file:View.dtd</schemaSource>
+         <actionTypeXmlField/>
+      </PSXPageDataTank>
+      <PSXRequestor directDataStream="no" id="0">
+         <requestPage>TS_ORPHANED_FOLDERS</requestPage>
+         <SelectionParams/>
+         <ValidationRules/>
+         <characterEncoding>UTF-8</characterEncoding>
+         <MimeProperties>
+            <html>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </html>
+            <htm>
+               <PSXTextLiteral id="0">
+                  <text>text/html</text>
+               </PSXTextLiteral>
+            </htm>
+         </MimeProperties>
+      </PSXRequestor>
+      <PSXResultPageSet id="0">
+         <PSXResultPage allowNamespaceCleanup="false" id="10768">
+            <extensionsSupported/>
+         </PSXResultPage>
+      </PSXResultPageSet>
+      <PSXResultPager id="10191">
+         <maxRowsPerPage>-1</maxRowsPerPage>
+         <maxPages>-1</maxPages>
+         <maxPageLinks>10</maxPageLinks>
+      </PSXResultPager>
+   </PSXDataSet>
+   <PSXLogger id="0" logAppStartStop="no" logAppStatistics="no" logBasicUserActivity="no" logDetailedUserActivity="no" logErrors="no" logExecutionPlan="no" logFullUserActivity="no" logMultipleHandlers="no" logServerStartStop="no"/>
+   <PSXTraceInfo id="0" traceAppHandlerProc="no" traceAppSecurity="no" traceBasicRequestInfo="no" traceConditionalEval="no" traceDbPool="no" traceEnabled="no" traceExitExec="no" traceExitProc="no" traceFileInfo="no" traceInitHttpVar="no" traceMapper="no" traceOutputColumnWidth="80" traceOutputConv="no" tracePostExitCgi="no" tracePostExitXml="no" tracePostPreProcHttpVar="no" traceResourceHandler="no" traceResultSet="no" traceSessionInfo="no" traceTimestampOnlyEnabled="no"/>
+   <backEndLoginPassthru>no</backEndLoginPassthru>
+   <userProperty name="pageDatatankFilePath10739">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10739">2</userProperty>
+   <userProperty name="schemaSourceReadOnly10797">true</userProperty>
+   <userProperty name="schemaSourceReadOnly10794">true</userProperty>
+   <userProperty name="schemaSourceReadOnly10791">true</userProperty>
+   <userProperty name="locationX10799">83</userProperty>
+   <userProperty name="locationX10798">13</userProperty>
+   <userProperty name="locationX10797">383</userProperty>
+   <userProperty name="locationX10796">83</userProperty>
+   <userProperty name="locationX10795">14</userProperty>
+   <userProperty name="locationX10794">383</userProperty>
+   <userProperty name="locationX10793">83</userProperty>
+   <userProperty name="locationX10792">14</userProperty>
+   <userProperty name="locationX10791">383</userProperty>
+   <userProperty name="locationX10790">83</userProperty>
+   <userProperty name="schemaSourceReadOnly10788">true</userProperty>
+   <userProperty name="schemaSourceReadOnly10785">true</userProperty>
+   <userProperty name="savedFromWorkbench">Yes</userProperty>
+   <userProperty name="schemaSourceReadOnly10782">true</userProperty>
+   <userProperty name="locationX10789">13</userProperty>
+   <userProperty name="locationX10788">383</userProperty>
+   <userProperty name="locationX10787">83</userProperty>
+   <userProperty name="locationX10786">14</userProperty>
+   <userProperty name="locationX10785">383</userProperty>
+   <userProperty name="locationX10784">83</userProperty>
+   <userProperty name="locationX10783">13</userProperty>
+   <userProperty name="locationX10782">383</userProperty>
+   <userProperty name="locationX10781">83</userProperty>
+   <userProperty name="locationX10780">29</userProperty>
+   <userProperty name="schemaSourceReadOnly10779">true</userProperty>
+   <userProperty name="schemaSourceReadOnly10776">true</userProperty>
+   <userProperty name="schemaSourceReadOnly10773">true</userProperty>
+   <userProperty name="schemaSourceReadOnly10770">true</userProperty>
+   <userProperty name="locationX10779">383</userProperty>
+   <userProperty name="locationX10778">76</userProperty>
+   <userProperty name="locationX10777">21</userProperty>
+   <userProperty name="locationX10776">383</userProperty>
+   <userProperty name="locationX10775">83</userProperty>
+   <userProperty name="locationX10774">21</userProperty>
+   <userProperty name="locationX10773">383</userProperty>
+   <userProperty name="locationX10772">83</userProperty>
+   <userProperty name="locationX10771">21</userProperty>
+   <userProperty name="locationX10770">383</userProperty>
+   <userProperty name="schemaSourceReadOnly10800">true</userProperty>
+   <userProperty name="locationX10801">13</userProperty>
+   <userProperty name="locationX10769">83</userProperty>
+   <userProperty name="locationX10800">383</userProperty>
+   <userProperty name="locationX10768">411</userProperty>
+   <userProperty name="locationX10767">411</userProperty>
+   <userProperty name="locationX10766">411</userProperty>
+   <userProperty name="locationX10765">411</userProperty>
+   <userProperty name="locationX10764">411</userProperty>
+   <userProperty name="locationX10763">411</userProperty>
+   <userProperty name="locationY10799">22</userProperty>
+   <userProperty name="locationX10762">411</userProperty>
+   <userProperty name="locationY10798">672</userProperty>
+   <userProperty name="locationX10761">411</userProperty>
+   <userProperty name="locationY10797">0</userProperty>
+   <userProperty name="locationX10760">411</userProperty>
+   <userProperty name="locationY10796">22</userProperty>
+   <userProperty name="locationY10795">558</userProperty>
+   <userProperty name="locationY10794">0</userProperty>
+   <userProperty name="locationY10793">22</userProperty>
+   <userProperty name="locationY10792">439</userProperty>
+   <userProperty name="locationY10791">0</userProperty>
+   <userProperty name="locationY10790">22</userProperty>
+   <userProperty name="schemaSourceReadOnly10751">true</userProperty>
+   <userProperty name="locationX10759">411</userProperty>
+   <userProperty name="locationX10758">411</userProperty>
+   <userProperty name="locationX10757">411</userProperty>
+   <userProperty name="locationX10756">411</userProperty>
+   <userProperty name="locationX10755">411</userProperty>
+   <userProperty name="locationX10754">411</userProperty>
+   <userProperty name="locationX10753">411</userProperty>
+   <userProperty name="locationY10789">322</userProperty>
+   <userProperty name="locationX10752">22</userProperty>
+   <userProperty name="locationY10788">0</userProperty>
+   <userProperty name="locationX10751">383</userProperty>
+   <userProperty name="locationY10787">22</userProperty>
+   <userProperty name="locationX10750">83</userProperty>
+   <userProperty name="locationY10786">216</userProperty>
+   <userProperty name="locationY10785">0</userProperty>
+   <userProperty name="locationY10784">22</userProperty>
+   <userProperty name="locationY10783">113</userProperty>
+   <userProperty name="locationY10782">0</userProperty>
+   <userProperty name="schemaSourceReadOnly10748">true</userProperty>
+   <userProperty name="locationY10781">22</userProperty>
+   <userProperty name="locationY10780">907</userProperty>
+   <userProperty name="pageDatatankFilePath10797">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="schemaSourceReadOnly10745">true</userProperty>
+   <userProperty name="pageDatatankFilePath10794">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="schemaSourceReadOnly10742">true</userProperty>
+   <userProperty name="pageDatatankSrcType10797">2</userProperty>
+   <userProperty name="pageDatatankFilePath10791">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10794">2</userProperty>
+   <userProperty name="pageDatatankSrcType10791">2</userProperty>
+   <userProperty name="locationX10749">21</userProperty>
+   <userProperty name="locationX10748">383</userProperty>
+   <userProperty name="locationX10747">83</userProperty>
+   <userProperty name="locationX10746">22</userProperty>
+   <userProperty name="locationX10745">383</userProperty>
+   <userProperty name="locationX10744">83</userProperty>
+   <userProperty name="locationX10743">21</userProperty>
+   <userProperty name="locationY10779">0</userProperty>
+   <userProperty name="locationX10742">383</userProperty>
+   <userProperty name="locationY10778">22</userProperty>
+   <userProperty name="locationX10741">83</userProperty>
+   <userProperty name="locationY10777">1024</userProperty>
+   <userProperty name="locationX10740">13</userProperty>
+   <userProperty name="locationY10776">0</userProperty>
+   <userProperty name="locationY10775">22</userProperty>
+   <userProperty name="locationY10774">1131</userProperty>
+   <userProperty name="locationY10773">0</userProperty>
+   <userProperty name="schemaSourceReadOnly10739">true</userProperty>
+   <userProperty name="locationY10772">22</userProperty>
+   <userProperty name="locationY10771">1251</userProperty>
+   <userProperty name="pageDatatankFilePath10788">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="locationY10770">0</userProperty>
+   <userProperty name="pageDatatankFilePath10785">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10788">2</userProperty>
+   <userProperty name="pageDatatankFilePath10782">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10785">2</userProperty>
+   <userProperty name="pageDatatankSrcType10782">2</userProperty>
+   <userProperty name="locationX10739">383</userProperty>
+   <userProperty name="locationX10738">83</userProperty>
+   <userProperty name="locationY10801">795</userProperty>
+   <userProperty name="locationY10769">22</userProperty>
+   <userProperty name="locationY10800">0</userProperty>
+   <userProperty name="locationY10768">853</userProperty>
+   <userProperty name="locationY10767">853</userProperty>
+   <userProperty name="locationY10766">853</userProperty>
+   <userProperty name="locationY10765">853</userProperty>
+   <userProperty name="locationY10764">853</userProperty>
+   <userProperty name="locationY10763">853</userProperty>
+   <userProperty name="locationY10762">853</userProperty>
+   <userProperty name="pageDatatankFilePath10779">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="locationY10761">853</userProperty>
+   <userProperty name="locationY10760">853</userProperty>
+   <userProperty name="pageDatatankFilePath10776">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10779">2</userProperty>
+   <userProperty name="pageDatatankFilePath10773">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10776">2</userProperty>
+   <userProperty name="pageDatatankFilePath10770">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10773">2</userProperty>
+   <userProperty name="pageDatatankSrcType10770">2</userProperty>
+   <userProperty name="locationY10759">853</userProperty>
+   <userProperty name="locationY10758">853</userProperty>
+   <userProperty name="locationY10757">853</userProperty>
+   <userProperty name="locationY10756">853</userProperty>
+   <userProperty name="locationY10755">853</userProperty>
+   <userProperty name="locationY10754">853</userProperty>
+   <userProperty name="locationY10753">853</userProperty>
+   <userProperty name="locationY10752">1380</userProperty>
+   <userProperty name="pageDatatankFilePath10800">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="locationY10751">0</userProperty>
+   <userProperty name="locationY10750">22</userProperty>
+   <userProperty name="pageDatatankSrcType10800">2</userProperty>
+   <userProperty name="locationY10749">1490</userProperty>
+   <userProperty name="locationY10748">0</userProperty>
+   <userProperty name="locationY10747">22</userProperty>
+   <userProperty name="locationY10746">1604</userProperty>
+   <userProperty name="locationY10745">0</userProperty>
+   <userProperty name="locationY10744">22</userProperty>
+   <userProperty name="locationY10743">1719</userProperty>
+   <userProperty name="locationY10742">0</userProperty>
+   <userProperty name="locationY10741">22</userProperty>
+   <userProperty name="locationY10740">6</userProperty>
+   <userProperty name="pageDatatankFilePath10751">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10751">2</userProperty>
+   <userProperty name="locationY10739">0</userProperty>
+   <userProperty name="locationY10738">22</userProperty>
+   <userProperty name="pageDatatankFilePath10748">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankFilePath10745">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10748">2</userProperty>
+   <userProperty name="pageDatatankFilePath10742">/home/support/Customers/OOB/TEST/9924/tx_cxViews/View.dtd</userProperty>
+   <userProperty name="pageDatatankSrcType10745">2</userProperty>
+   <userProperty name="pageDatatankSrcType10742">2</userProperty>
+</PSXApplication>
